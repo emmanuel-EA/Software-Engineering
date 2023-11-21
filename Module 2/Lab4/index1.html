@@ -1,0 +1,26 @@
+let news = [
+    { id: 1, title: 'Election Results', content: "Newly elected minister..." },
+    { id: 2, title: 'Sporting Success', content: "World Cup winners..." },
+    { id: 3, title: 'Tornado Warning', content: "Residents should prepare..." }
+];
+
+function displayNews() {
+    let newsContainer = document.getElementById('news-container');
+    newsContainer.innerHTML = '';
+
+    news.forEach(item => {
+        let newsItem = document.createElement('div');
+        newsItem.id = 'news-item-' + item.id;
+        newsItem.innerHTML = `
+            <h2>${item.title}</h2>
+            <p>${item.content}</p>
+        `;
+        newsContainer.appendChild(newsItem);
+    });
+}
+
+// Display news on page load
+displayNews();
+
+// Update news every 5 seconds
+setInterval(displayNews, 5000);
