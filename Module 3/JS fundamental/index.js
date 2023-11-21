@@ -88,8 +88,9 @@ const inigo = {
     },
     getCatchPhrase: (person) => person.numFingers == 6 ? 
     'Nice to meet you too.'
-    
+
 }
+
 console.log(inigo.greeting(westley))
 console.log(inigo.greeting(rugen))
 
