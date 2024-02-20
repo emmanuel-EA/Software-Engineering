@@ -1,0 +1,20 @@
+.filters {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card.mens_clothing .card-header {
+    background: lightblue
+}
+
+.card.womens_clothing .card-header {
+    background: lightpink
+}
+
+.card.jewelery .card-header {
+    background: lightgoldenrodyellow
+}
+
+.card.electronics .card-header {
+    background: lightgrey
+}
