@@ -1,0 +1,15 @@
+.Calculator {
+    max-width: 600px;
+    margin: 1em auto;
+    padding: 1em;
+    border: 1px solid #ddd;
+}
+
+.Calculator form {
+    display: flex;
+    justify-content: center;
+}
+
+.Calculator form>* {
+    margin: 0.5em;
+}
